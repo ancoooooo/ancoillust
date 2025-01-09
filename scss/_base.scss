@@ -40,7 +40,7 @@ h1 {
 h2,
 h3 {
   @include font-webfont_noto;
-  @include fz(32);
+  @include fz(24);
   text-align: center;
   margin-bottom: 15px;
 }
