@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.ancodesign</title>
+  <meta name="description" content="みなさまと共につくるデザイン。">
+
+  <!-- WebFont google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="l_header" id="headerBottom">
+    <button class="c_hamburger"><span class="c_hamburger__btn"></span></button>
+    <img class="l_header__secondLogo" src="img/logo/logo_sp.png" alt="illustration" id="headerMv">
+    <nav class="l_header__nav" id="headerFixed">
+      <ul class="l_header__navList">
+        <li class="l_header__navItem"><a class="l_header__navLink" href="index.html">Home</a></li>
+        <li class="l_header__navItem"><a class="l_header__navLink" href="concept.html">Concept</a></li>
+        <li class="l_header__navItem"><a class="l_header__navLink" href="gallery.html">Gallery</a></li>
+        <li class="l_header__navItem"><a class="l_header__navLink" href="about.html">About</a></li>
+        <li class="l_header__navItem"><a class="l_header__navLink" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="e_h1__space">Gallery</h1>
+    <ul class="horizon_tab js-tab_switch--tab horizon_space">
+      <li class="horizon_tab--item">
+        <a href="#content01" class="horizon_tab--item--btn">Life</a>
+      </li>
+      <li class="horizon_tab--item">
+        <a href="#content02" class="horizon_tab--item--btn">Animal</a>
+      </li>
+      <li class="horizon_tab--item">
+        <a href="#content03" class="horizon_tab--item--btn">Works</a>
+      </li>
+    </ul>
+
+    <div class="content_node js-tab_switch--body">
+      <div id="content01" class="content_node--inner">
+        <img src="img/life/animaltree.jpg" alt="">
+      </div>
+      <div id="content02" class="content_node--inner">
+        <img src="img/animal/araiguma.jpg" alt="アライグマのイラスト">
+      </div>
+      <div id="content03" class="content_node--inner">
+        <img src="img/works/animals.JPG" alt="動物のイラスト">
+      </div>
+    </div>
+  </main>
+  <footer class="l_footer">
+    <div class="l_footer__inner">
+      <nav class="l_footer__nav">
+        <ul class="l_footer__navList">
+          <li class="l_footer__navItem"><a class="l_footer__navLink" href="index.html">Home</a></li>
+          <li class="l_footer__navItem"><a class="l_footer__navLink" href="concept.html">Concept</a></li>
+          <li class="l_footer__navItem"><a class="l_footer__navLink" href="gallery.html">Gallery</a></li>
+          <li class="l_footer__navItem"><a class="l_footer__navLink" href="about.html">About</a></li>
+          <li class="l_footer__navItem"><a class="l_footer__navLink" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <small class="l_footer__copy">&copy; .ancodesign</small>
+      <p class="l_footer__text">当サイトの内容、テキスト、画像等の<br class="e_pc__hidden">無断転載・無断使用はご遠慮ください。</p>
+    </div>
+  </footer>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

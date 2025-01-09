@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anco-illustration</title>
+    <meta name="description" content="みなさまと共につくるデザイン。">
+
+    <!-- WebFont google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="l_header" id="headerBottom">
+        <button class="c_hamburger"><span class="c_hamburger__btn"></span></button>
+        <picture class="l_header__logo">
+            <source srcset="img/logo/logo_sp.png" media="(max-width: 999px)">
+            <source srcset="img/logo/logo.jpg" media="(min-width: 1000px)">
+            <img class="l_header__logo" src="img/logo/logo.jpg" alt=".ancodesign">
+        </picture>
+        <h1 class="l_header__title l_topPage__title" id="headerMv">illustration</h1>
+        <div class="l_header__scroll">Scroll<br>▼</div>
+        <div class="l_header__inner">
+            <nav class="l_header__nav" id="headerFixed">
+                <ul class="l_header__navList">
+                    <li class="l_header__navItem"><a class="l_header__navLink" href="#">Home</a></li>
+                    <li class="l_header__navItem"><a class="l_header__navLink" href="concept.html">Concept</a></li>
+                    <li class="l_header__navItem"><a class="l_header__navLink" href="gallery.html">Gallery</a></li>
+                    <li class="l_header__navItem"><a class="l_header__navLink" href="about.html">About</a></li>
+                    <li class="l_header__navItem"><a class="l_header__navLink" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="l_main">
+        <div class="l_main__inner">
+            <section class="c_section" id="concept">
+                <h2 class="c_section__title">Concept</h2>
+                <p class="c_section__text">
+                    「皆さまと共につくる」<br class="e_pc__hidden">絵のデザイン事務所です。<br>
+                    媒体やコンセプトに合わせたイラストを<br class="e_pc__hidden">ご提案いたします。
+                </p>
+                <button class="e_btn"><a href="concept.html">詳細</a></button>
+            </section>
+            <section class="c_section" id="gallery">
+                <h2 class="c_section__title">Gallery</h2>
+                <ul class="c_section__galleryList">
+                    <li class="c_section__item"><img src="img/life/animaltree.jpg" alt=""></li>
+                    <li class="c_section__item"><img src="img/life/book.jpg" alt=""></li>
+                    <li class="c_section__item"><img src="img/life/bouquet.jpg" alt=""></li>
+                    <li class="c_section__item"><img src="img/life/boyandbear.jpg" alt=""></li>
+                    <li class="c_section__item"><img src="img/life/girltiger.jpg" alt=""></li>
+                    <li class="c_section__item e_hide"><img src="img/life/kouyourisu.jpg" alt=""></li>
+                    <li class="c_section__item e_hide"><img src="img/life/sakura.jpg" alt=""></li>
+                    <li class="c_section__item e_hide"><img src="img/life/starofdawn.jpg" alt=""></li>
+                    <li class="c_section__item e_hide"><img src="img/life/study.jpg" alt=""></li>
+                    <li class="c_section__item e_hide"><img src="img/life/sunflower.jpg" alt=""></li>
+                </ul>
+                <button class="c_section__btn" id="galleryBtn"><a href="gallery.html"><span></span>view more</a></button>
+            </section>
+
+            <section class="c_section" id="contact">
+                <h2 class="c_section__title">Contact</h2>
+                <p class="c_section__text">お気軽にご相談ください。</p>
+                <form class="c_section__form" action="">
+                    <dl class="c_section__formList c_twoColumnsGrid">
+                        <dt><label for="user-name">氏名</label></dt>
+                        <dd><input type="text" name="user-name" id="user-name" class="e_border"></dd>
+                        <dt><label for="user-email">メールアドレス</label></dt>
+                        <dd><input type="email" name="user-email" id="user-email" class="e_border"></dd>
+                        <dt><label for="content">お問い合わせ</label></dt>
+                        <dd><textarea name="content" id="content" class="e_border"></textarea></dd>
+                    </dl>
+                    <button class="e_btn" name="submit" id="submit" type="submit">送信</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="l_footer">
+        <div class="l_footer__inner">
+            <nav class="l_footer__nav">
+                <ul class="l_footer__navList">
+                    <li class="l_footer__navItem"><a class="l_footer__navLink" href="#">Home</a></li>
+                    <li class="l_footer__navItem"><a class="l_footer__navLink" href="concept.html">Concept</a></li>
+                    <li class="l_footer__navItem"><a class="l_footer__navLink" href="gallery.html">Gallery</a></li>
+                    <li class="l_footer__navItem"><a class="l_footer__navLink" href="about.html">About</a></li>
+                    <li class="l_footer__navItem"><a class="l_footer__navLink" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <small class="l_footer__copy">&copy; .ancodesign</small>
+            <p class="l_footer__text">当サイトの内容、テキスト、画像等の<br class="e_pc__hidden">無断転載・無断使用はご遠慮ください。</p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
