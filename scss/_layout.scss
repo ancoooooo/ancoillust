@@ -275,46 +275,6 @@ span {
         color: $black;
         font-weight: bold;
 
-        // &::after {
-        //     @include beaf;
-        //     // position: absolute;
-        //     width: 1px;
-        //     height: 80px;
-        //     background-color: $black;
-        //     left: 50%;
-        //     top: 30px;
-        //     transform: translateX(-50%);
-
-        //     animation-name: scrollAnimation;
-        //     animation-duration: 1.8s;
-        //     animation-timing-function: ease-out;
-        //     animation-iteration-count: infinite;
-
-        //     @keyframes scrollAnimation {
-        //         0% {
-        //             transform: scaleY(0);
-        //             transform-origin: top;
-        //         }
-
-        //         50% {
-        //             transform: scaleY(1);
-        //             transform-origin: top;
-        //         }
-
-        //         50.1% {
-        //             transform: scaleY(1);
-        //             transform-origin: bottom;
-        //         }
-
-        //         100% {
-        //             transform: scaleY(0);
-        //             transform-origin: bottom;
-        //         }
-
-        //     }
-
-        // }
-
     }
 }
 
@@ -330,9 +290,7 @@ span {
     &__galleryList {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        // grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
-        // flex-wrap: wrap;
 
 
         overflow: hidden;
@@ -348,9 +306,6 @@ span {
     &__img {
 
         display: block;
-        // width: 350px;
-        // height: 350px;
-
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -408,9 +363,6 @@ span {
             }
 
 
-
-            // &::before {
-            //content: "";
             span {
                 display: inline-block;
                 background-color: $black;
@@ -470,7 +422,6 @@ span {
 
 //ハンバーガーメニュー
 .c_hamburger {
-    // position: absolute;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -600,26 +551,7 @@ span {
     left: 0;
     background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
-    // height: 80px;
-    // line-height: 80px;
 }
-
-
-//navfixed
-// .fixedTitle {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     background-color: rgba(255, 255, 255, 0.7);
-//     width: 100%;
-//     height: 80px;
-//     line-height: 80px;
-
-//     @include desktop {
-//         display: none;
-//     }
-//   }
-
 
 
 //---------FLOW page
@@ -682,9 +614,6 @@ span {
 
 // タブデザイン
 .horizon_tab {
-    // display: flex;
-    // align-items: flex-end;
-    // justify-content: space-between;  //flex-start
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto 50px;
@@ -736,7 +665,6 @@ span {
     width: 100%;
     height: 100%;
     border-radius: 4px 4px 0 0;
-    // border: 1px solid #ccc;
     border-bottom: none;
 
     color: $black;
@@ -774,8 +702,6 @@ span {
     }
 
     .is-disabled & {
-        // color: #ccc;
-        // background-color: #eee;
         pointer-events: none;
     }
 }
