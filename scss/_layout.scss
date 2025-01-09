@@ -283,7 +283,6 @@ span {
 
 
 
-
 //作品画像設定
 .c_section {
 
@@ -291,9 +290,11 @@ span {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
-
-
         overflow: hidden;
+
+        @include desktop {
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        }
     }
 
     &__item {
@@ -709,6 +710,7 @@ span {
 // コンテンツ
 .content_node--inner {
     width: 90%;
+    
 
     @include desktop {
         width: 90%;
@@ -847,4 +849,13 @@ span {
     &__text{
         line-height: 1.5rem;
     }
+}
+
+
+//imgサイズ
+.e_imgSize300{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }

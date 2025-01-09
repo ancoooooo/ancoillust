@@ -64,6 +64,8 @@ $(document).ready(function() {
    });
 });
 
+
+//タブ切り替え
 var tabSwitchTab = 'js-tab_switch--tab'; // 切り替えタブ要素
 var tabSwitchBody = 'js-tab_switch--body'; // 切り替えられるコンテンツ要素
 var tabSwitchBtn = 'js-tab_switch--button'; // 切り替えタブ要素内ボタン
@@ -108,7 +110,7 @@ if($('.' + tabSwitchTab).length) {
         $(tabTargetContent).siblings().hide();
 
         // クリック先の要素のみフェードイン
-        $(tabTargetContent).fadeIn(animateSpeed);
+        $(tabTargetContent).css('display', 'grid').hide().fadeIn(animateSpeed);
       }
     }
   });

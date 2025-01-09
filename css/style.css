@@ -359,6 +359,11 @@ body.is-openMenu .l_header__navList {
   gap: 20px;
   overflow: hidden;
 }
+@media (min-width: 1000px) {
+  .c_section__galleryList {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
 .c_section__item {
   margin: 0 auto;
   width: 300px;
@@ -791,6 +796,13 @@ body.is-openMenu .c_hamburger__btn::after {
 }
 .c_mind__text {
   line-height: 1.5rem;
+}
+
+.e_imgSize300 {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .fadeIn {
