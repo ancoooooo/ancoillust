@@ -23,6 +23,7 @@ body {
   font-size: 11vw;
   text-align: center;
   background-color: #fff;
+  line-height: 90vh;
 }
 @media (min-width: 1000px) {
   .l_topPage__title {
@@ -35,7 +36,6 @@ h1 {
   font-size: 32px;
   font-size: 2rem;
   text-align: center;
-  line-height: 90vh;
 }
 
 h2,
@@ -156,10 +156,6 @@ legend {
   .l_footer__inner-sub {
     width: 60vw;
   }
-}
-
-.l_header {
-  height: 100vh;
 }
 
 .c_flex {
@@ -873,6 +869,70 @@ body.is-openMenu .c_hamburger__btn::after {
   height: auto;
   margin: 0 auto;
   display: block;
+}
+
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 500;
+}
+.pagetop a {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: block;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px 15px 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+@media (min-width: 1000px) {
+  .pagetop a {
+    padding: 10px 10px 13px 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+.pagetop a:hover {
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  color: #ccc;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 10px 15px 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 1;
+}
+@media (min-width: 1000px) {
+  .pagetop a:hover {
+    font-size: 25px;
+    padding: 10px 10px 13px 10px;
+  }
+}
+.pagetop span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: #fff 4px solid;
+  border-left: #fff 4px solid;
+  transform: rotate(45deg);
+  margin: 13px auto;
+}
+.pagetop span:hover {
+  border-top: #D9D9D9 4px solid;
+  border-left: #D9D9D9 4px solid;
 }
 
 .fadeIn {

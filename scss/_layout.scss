@@ -17,9 +17,6 @@
     }
 }
 
-.l_header{
-    height: 100vh;
-}
 
 //concept flow about
 
@@ -932,3 +929,79 @@ span {
     margin: 0 auto;
     display: block;
 } 
+
+
+
+.pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 500;
+  
+  
+    a {
+      width: 50px;
+      height: 50px;
+  
+  
+      font-size: 20px;
+      column-gap: 10px;
+  
+      display: block;
+      border-radius: 10px;
+      background-color: #d9d9d9;
+      text-align: center;
+      color: $white;
+      text-decoration: none;
+      padding: 10px 10px 15px 10px;
+  
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5;
+      opacity: 0.5;
+  
+      @include desktop {
+        padding: 10px 10px 13px 10px;
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+  
+  
+      }
+  
+      &:hover {
+        display: block;
+        background-color: $white;
+        text-align: center;
+        color: #ccc;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 10px 15px 10px;
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.5;
+        opacity: 1;
+  
+        @include desktop {
+          font-size: 25px;
+          padding: 10px 10px 13px 10px;
+  
+        }
+      }
+    }
+
+    span{
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-top:$white 4px solid;
+        border-left:$white 4px solid;
+        transform: rotate(45deg);
+        margin: 13px auto;
+
+        &:hover{
+            border-top:$gray 4px solid;
+        border-left:$gray 4px solid;
+        }
+    }
+  }
+  
