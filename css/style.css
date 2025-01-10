@@ -23,7 +23,7 @@ body {
   font-size: 12vw;
   text-align: center;
   height: 90vh;
-  line-height: 103vh;
+  line-height: 90vh;
   background-color: #fff;
 }
 
@@ -137,20 +137,17 @@ legend {
   display: none;
 }
 
-.l_header__inner,
 .l_main__inner,
 .l_footer__inner {
   width: 90vw;
   margin: 0 auto;
 }
-.l_header__inner-sub,
 .l_main__inner-sub,
 .l_footer__inner-sub {
   width: 80vw;
   margin: 0 auto;
 }
 @media (min-width: 1000px) {
-  .l_header__inner-sub,
   .l_main__inner-sub,
   .l_footer__inner-sub {
     width: 60vw;
