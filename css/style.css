@@ -193,6 +193,12 @@ legend {
 .c_section__space {
   margin-bottom: 30px;
 }
+.c_section__contactSpace {
+  margin-bottom: 15px;
+}
+.c_section__contactSpace-text {
+  margin-bottom: 5px;
+}
 
 p {
   text-align: center;
@@ -226,6 +232,7 @@ span {
   opacity: 0;
   pointer-events: none;
   transition: background-color 0.5s linear;
+  z-index: 300;
 }
 @media (min-width: 1000px) {
   .l_header__nav {
@@ -321,7 +328,7 @@ body.is-openMenu .l_header__nav {
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 300;
 }
 body.is-openMenu .l_header__navList {
   display: flex;
@@ -624,7 +631,7 @@ body.is-openMenu .c_hamburger__btn::after {
   position: relative;
   height: 60px;
   font-weight: bold;
-  z-index: 500;
+  z-index: 200;
 }
 @media (min-width: 1000px) {
   .horizon_tab--item {
@@ -778,11 +785,10 @@ body.is-openMenu .c_hamburger__btn::after {
   gap: 10px;
 }
 @media (min-width: 1000px) {
-  .c_section__formList {
+  .c_section__contactSpace {
     display: grid;
     grid-template-columns: 150px 300px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
   }
 }
 .c_section__formList textarea {

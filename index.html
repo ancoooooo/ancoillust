@@ -72,13 +72,19 @@
                 <h2 class="c_section__title">Contact</h2>
                 <p class="c_section__text">お気軽にご相談ください。</p>
                 <form class="c_section__form" action="">
-                    <dl class="c_section__formList c_twoColumnsGrid">
-                        <dt><label for="user-name">氏名</label></dt>
-                        <dd><input type="text" name="user-name" id="user-name" class="e_border"></dd>
-                        <dt><label for="user-email">メールアドレス</label></dt>
-                        <dd><input type="email" name="user-email" id="user-email" class="e_border"></dd>
-                        <dt><label for="content">お問い合わせ</label></dt>
-                        <dd><textarea name="content" id="content" class="e_border"></textarea></dd>
+                    <dl class="c_section__formList ">
+                        <div class="c_section__contactSpace">
+                            <dt class="c_section__contactSpace-text"><label for="user-name">氏名</label></dt>
+                            <dd><input type="text" name="user-name" id="user-name" class="e_border"></dd>
+                        </div>
+                        <div class="c_section__contactSpace">
+                            <dt class="c_section__contactSpace-text"><label for="user-email">メールアドレス</label></dt>
+                            <dd><input type="email" name="user-email" id="user-email" class="e_border"></dd>
+                        </div>
+                        <div class="c_section__contactSpace">
+                            <dt class="c_section__contactSpace-text"><label for="content">お問い合わせ</label></dt>
+                            <dd><textarea name="content" id="content" class="e_border"></textarea></dd>
+                        </div>
                     </dl>
                     <button class="e_btn" name="submit" id="submit" type="submit">送信</button>
                 </form>
