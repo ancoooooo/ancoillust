@@ -116,10 +116,10 @@ span {
         @include desktop {
             bottom: 70px;
             right: 0;
-            width: 80%;
+            width: 55%;
             height: auto;
             transform: translate(0, 0);
-            z-index: -1;
+            z-index: 0;
         }
 
     }

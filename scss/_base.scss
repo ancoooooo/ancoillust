@@ -21,9 +21,13 @@ body {
 
 .l_topPage__title {
   @include font-JP_mincho;
-  font-size: 12vw;
+  font-size: 11vw;
   text-align: center;
   background-color: #fff;
+
+  @include desktop {
+    font-size: max(8vw,100px);
+  }
 }
 
 h1 {
