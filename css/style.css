@@ -22,7 +22,7 @@ body {
   font-family: "Shippori Mincho", serif;
   font-size: 12vw;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   line-height: 103vh;
   background-color: #fff;
 }
@@ -344,7 +344,7 @@ body.is-openMenu .l_header__navList {
 }
 
 .l_header__scroll {
-  position: absolute;
+  margin-bottom: 20px;
   width: 100%;
   text-align: center;
   font-size: 16px;
@@ -360,6 +360,46 @@ body.is-openMenu .l_header__navList {
   }
 }
 
+.e_scrollArrow {
+  height: auto;
+  width: 28px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.bounce {
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation: bounce 3.6s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  5.55556% {
+    transform: translateY(0);
+  }
+  11.11111% {
+    transform: translateY(0);
+  }
+  22.22222% {
+    transform: translateY(-15px);
+  }
+  27.77778% {
+    transform: translateY(0);
+  }
+  33.33333% {
+    transform: translateY(-15px);
+  }
+  44.44444% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .c_section__galleryList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
