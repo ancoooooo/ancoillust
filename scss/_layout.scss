@@ -105,9 +105,9 @@ span {
     &__logo {
 
         position: absolute;
-        bottom: 50%;
+        top: 25%;
         right: 50%;
-        width: 28vh;
+        width: 25vh;
         transform: translate(50%, -50%);
 
         @include desktop {
