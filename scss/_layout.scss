@@ -22,7 +22,9 @@
 //concept flow about
 
 .c_flex {
-    display: flex;
+    @include desktop {
+        display: flex;
+    }
 }
 
 .c_twoColumnsGrid {
@@ -133,13 +135,11 @@ span {
         @include desktop {
             opacity: 1;
             pointer-events: auto;
-
-
         }
 
         &List {
 
-            // display: none;
+            display: none;
 
 
             @include desktop {

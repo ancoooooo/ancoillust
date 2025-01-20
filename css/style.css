@@ -158,8 +158,10 @@ legend {
   }
 }
 
-.c_flex {
-  display: flex;
+@media (min-width: 1000px) {
+  .c_flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -259,6 +261,9 @@ span {
     opacity: 1;
     pointer-events: auto;
   }
+}
+.l_header__navList {
+  display: none;
 }
 @media (min-width: 1000px) {
   .l_header__navList {
