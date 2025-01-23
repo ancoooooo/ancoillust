@@ -136,3 +136,38 @@ if ($('.' + tabSwitchTab).length) {
 //     images.forEach(img => { observer.observe(img); });
 // });
 
+//星のエフェクト
+document.addEventListener('DOMContentLoaded', function() {
+  const starField = document.querySelector('.star-field');
+
+  for (let i = 0; i < 100; i++) {
+      let star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.width = star.style.height = `${Math.random() * 10 + 10}px`; // ランダムな大きさを設定
+      star.style.animationDuration = `${Math.random() * 5 + 5}s, ${Math.random() * 2 + 1}s`; // 回転の速度をランダムに設定
+      starField.appendChild(star);
+  }
+});
+
+//swiper
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1.5,
+  loop: true,
+  speed: 5000,
+  allowTouchMove: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    // スライドの表示枚数：500px以上の場合
+    500: {
+      slidesPerView: 4,
+    },
+    1000: {
+      slidesPerView: 6,
+    }
+  }
+});
+

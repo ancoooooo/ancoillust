@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anco-illustration</title>
     <meta name="description" content="みなさまと共につくるデザイン。">
-      <!-- favicon -->
-  <link rel="icon" href="img/logo/favicon.webp">
+    <!-- favicon -->
+    <link rel="icon" href="img/logo/favicon.webp">
 
     <!-- WebFont google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,20 +18,21 @@
 
 
     <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="l_header" >
+    <header class="l_header">
         <button class="c_hamburger"><span class="c_hamburger__btn"></span></button>
         <picture class="l_header__logo">
             <source srcset="img/logo/logo_sp.png" media="(max-width: 999px)">
             <source srcset="img/logo/logo_desktop.png" media="(min-width: 1000px)">
             <img class="l_header__logo" src="img/logo/logo_desktop.png" alt=".ancodesign">
         </picture>
-        <h1 class="l_header__title l_topPage__title" >illustration</h1>
+        <h1 class="l_header__title l_topPage__title">illustration</h1>
         <div class="l_header__scroll">Scroll</div>
-        <img  src="img/scrollArrow.svg" id="headerMv" class="animated bounce e_scrollArrow">
+        <img src="img/scrollArrow.svg" id="headerMv" class="animated bounce e_scrollArrow">
         <div class="l_header__inner">
             <nav class="l_header__nav" id="headerFixed">
                 <ul class="l_header__navList">
@@ -45,6 +46,7 @@
         </div>
     </header>
     <main class="l_main">
+        <div class="star-field"></div>
         <div class="l_main__inner">
             <section class="c_section" id="concept">
                 <h2 class="c_section__title e_space__marginTop">Concept</h2>
@@ -56,33 +58,136 @@
             </section>
             <section class="c_section" id="gallery">
                 <h2 class="c_section__title">Gallery</h2>
-                <ul class="c_section__galleryList">
-                    <li class="c_section__item"><img src="img/life/animaltree.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/camel.jpg" alt=""></li>
-                    <li class="c_section__item"><img src="img/life/book.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/araiguma.jpg" alt=""></li>
-                    <li class="c_section__item"><img src="img/life/bouquet.jpg" alt=""></li>
-                    <li class="c_section__item"><img src="img/life/boyandbear.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/koala.jpg" alt=""></li>
-                    <li class="c_section__item"><img src="img/life/girltiger.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/bear.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/life/kouyourisu.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/life/sakura.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/langur.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/raicho.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/life/starofdawn.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/kawauso.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/life/study.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/zou.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/life/sunflower.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/lion.jpg" alt=""></li>
-                    <li class="c_section__item e_hide"><img src="img/animal/baku.jpg" alt=""></li>
-                </ul>
+                <div class="swiper swiper-container" id="my-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img src="img/life/animaltree.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText e_text__center">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img src="img/life/book.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText e_text__center">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img src="img/life/bouquet.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText e_text__center">application</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img class="c_illust__img" src="img/life/boyandbear.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img src="img/life/girltiger.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img class="c_illust__img" src="img/life/kouyourisu.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img src="img/life/sakura.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative"><img class="c_illust__img" src="img/life/starofdawn.jpg"
+                                        alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img class="c_illust__img" src="img/life/study.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabA">
+                                <div class="c_illust__relative">
+                                    <img src="img/life/sunflower.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText e_text__center">life</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabB">
+                                <div class="c_illust__relative">
+                                    <img class="c_illust__img" src="img/animal/araiguma.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText">animal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="gallery.html#tabB">
+                                <div class="c_illust__relative">
+                                    <img src="img/animal/baku.jpg" alt="">
+                                    <div class="c_illust__mask">
+                                        <p class="c_illust__maskText e_text__center">animal</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
                 <button class="c_section__btn" id="galleryBtn"><a href="gallery.html"><span></span>view
                         more</a></button>
             </section>
 
-            <section class="c_section" id="contact">
+            <section class="c_section__contact" id="contact">
                 <h2 class="c_section__title">Contact</h2>
                 <p class="c_section__text">お気軽にご相談ください。</p>
                 <form class="c_section__form" action="">
@@ -122,6 +227,7 @@
         </div>
     </footer>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
