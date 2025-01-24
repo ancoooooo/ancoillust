@@ -25,12 +25,12 @@
 <body>
     <header class="l_header">
         <button class="c_hamburger"><span class="c_hamburger__btn"></span></button>
-        <picture class="l_header__logo">
+        <!-- <picture class="l_header__logo">
             <source srcset="img/logo/logo_sp.png" media="(max-width: 999px)">
             <source srcset="img/logo/logo_desktop.png" media="(min-width: 1000px)">
             <img class="l_header__logo" src="img/logo/logo_desktop.png" alt=".ancodesign">
-        </picture>
-        <h1 class="l_header__title l_topPage__title">illustration</h1>
+        </picture> -->
+        <h1 class="l_header__title l_topPage__title"><img class="l_header__mainLogo" src="img/logo/anco_logo.webp" alt=""></h1>
         <div class="l_header__scroll">Scroll</div>
         <img src="img/scrollArrow.svg" id="headerMv" class="animated bounce e_scrollArrow">
         <div class="l_header__inner">
@@ -48,7 +48,7 @@
     <main class="l_main">
         <div class="star-field"></div>
         <div class="l_main__inner">
-            <section class="c_section" id="concept">
+            <section class="c_section c_concept" id="concept">
                 <h2 class="c_section__title e_space__marginTop">Concept</h2>
                 <p class="c_section__text fadeIn">
                     「皆さまと共につくる」<br class="e_pc__hidden">絵のデザイン事務所です。<br>
@@ -183,8 +183,7 @@
 
                     </div>
                 </div>
-                <button class="c_section__btn" id="galleryBtn"><a href="gallery.html"><span></span>view
-                        more</a></button>
+                <button class="c_section__btn e_btn" id="galleryBtn"><a href="gallery.html">view more</a></button>
             </section>
 
             <section class="c_section__contact" id="contact">
@@ -202,7 +201,7 @@
                         </div>
                         <div class="c_section__contactSpace">
                             <dt class="c_section__contactSpace-text"><label for="content">お問い合わせ</label></dt>
-                            <dd><textarea name="content" id="content" class="e_border"></textarea></dd>
+                            <dd><textarea name="content" id="content" class="e_border" placeholder="現在こちらは使えません。"></textarea></dd>
                         </div>
                     </dl>
                     <button class="e_btn" name="submit" id="submit" type="submit">送信</button>
